@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Electric Two Wheeler Web Portal</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 1116px;
+            height: 480px;
+        }
+        .style2
+        {
+            height: 42px;
+        }
+        .style3
+        {
+            width: 225px;
+            height: 480px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+     <table border="1" width="100%">  
+                    <tr>  
+                        <td colspan="2"   style="text-align: center" bgcolor="#FF3399" class="style2">  
+                        
+                            <h1>Electric Two Wheeler Web Portal</h1>  
+                        </td>  
+                    </tr>  
+                    <tr>  
+                        <td style="text-align: left; " class="style3">  
+                         <img src="2.png" style="height: 234px; width: 223px" /><h1>Menu</h1>  
+<ul>
+<li><a href="Purchase.aspx" >Purchase</a></li>
+    <li><a href="quotation.aspx" >Quotation</a></li>
+    <li> <a href="sale.aspx"  >Sale</a></li>
+    <li><a href ="">View</a>
+    <ul>
+<li> <a  href ="viewstock.aspx"    title ="Vehicle Stock">Stock</a></li>
+<li> <a  href ="viewsale.aspx"     title ="Sale Detail"> Sale</a></li>
+<li> <a  href ="viewincome.aspx"     title ="Income Detail">Income</a></li>
+</ul >
+     <li><a href="login.aspx"  title ="Logout">Logout</a></li>
+</ul>
+                 </td>  
+                        <td style="text-align: center; " class="style1">  
+                            <asp:ContentPlaceHolder ID="MainContentPlaceHolder1" runat="server">  
+                            </asp:ContentPlaceHolder>  
+                        </td>  
+                    </tr>  
+                    
+                </table>  
+ 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
